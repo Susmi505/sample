@@ -1,0 +1,96 @@
+.login{
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 5% 10%;
+  justify-content: space-evenly;
+}
+.login_left{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 300px;
+  padding: 20px 0px;
+}
+.login_left input{
+  height: 25px;
+  padding: 5px 20px 5px 10px;
+  border: 2px solid #3d3d3d;
+}
+.login_left button{
+  padding: 12px;
+  background-color: #3d3d3d;
+  color:white;
+}
+.hr-sect {
+  display: flex;
+  flex-basis: 100%;
+  align-items: center;
+  color: rgb(61 61 61);
+  margin: 8px 0px;
+}
+.hr-sect:before,
+.hr-sect:after {
+  content: "";
+  flex-grow: 1;
+  background: rgba(0, 0, 0, 0.35);
+  height: 1px;
+  font-size: 0px;
+  line-height: 0px;
+  margin: 0px 8px;
+}
+.heading{
+  color:#3d3d3d;
+}
+.flag{
+  height: 35px;
+}
+.countries{
+  display: grid;
+  gap: 16px;
+  grid-template-columns: auto auto auto auto auto;
+}
+.center{
+  text-align: center;
+}
+.listing-country{
+  border: 1px solid black;
+    text-align: center;
+    padding: 10px 0px;
+}
+.checking{
+  display: flex;
+    align-items: center;
+    gap: 10px;
+}
+a{
+  text-decoration: none;
+}
+.checking label{
+  color: #6f6f6f;
+}
+.socialmedia{
+  gap: 13px;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 30px;
+}
+.socialmedia i{
+  padding: 8px 10px;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+.login_right{
+  padding-top: 25px;
+}
+@media screen and (max-width:718px){
+  .login{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .login_right{
+    text-align: center;
+  }
+  .login_left{
+    width: unset;
+  }
+}
